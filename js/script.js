@@ -27,8 +27,9 @@ const titleClickHandler = function(event){
     console.log('targetArticle:', targetArticle);
     targetArticle.classList.add('active');
     console.log('target:', targetArticle);
+   
   }
-  
+   generateTitleLinks();
   const links = document.querySelectorAll('.titles a');
   
   for(let link of links){
