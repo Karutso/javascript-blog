@@ -11,6 +11,10 @@ function generateTitleLinks(){
             for(let article of articles) {
                 const articleId = articles.getAttribute('id');
                 console.log(articleId);
-                
+                const article = articleId;
+                const articleTitle = article.querySelector(optTitleSelector).innerHTML;
+                const linkHTML = '<li><a href="#' + articleId + '"><span>' + articleTitle + '</span></a></li>';
+                console.log(linkHTML);
+                optTitleListSelector.insertAdjacentHTML('afterbegin', linkHTML);
 }
 }
