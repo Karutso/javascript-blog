@@ -1,5 +1,5 @@
 const optArticleSelector = '.post',
-  optTitleSelector = '.post-title',
+optTitleSelector = '.post-title',
   optTitleListSelector = '.titles';
 
 function generateTitleLinks(){
@@ -7,10 +7,10 @@ function generateTitleLinks(){
         console.log(titleList);
         titleList.innerHTML = '';
         const articles = document.querySelectorAll(optArticleSelector);
-    console.log(articles);
-    for(let articles of article){
-    const articleId = articles.getAttribute('id');
-        console.log(articleId);
-      
-    }
+        console.log(articles);
+            for(let article of articles) {
+                const articleId = articles.getAttribute('id');
+                console.log(articleId);
+                
+}
 }
